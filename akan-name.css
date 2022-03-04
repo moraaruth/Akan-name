@@ -1,12 +1,24 @@
+
+
+
 form label {
     display: inline-block;
     width: 100px;
     }
-    form div {
-       
-       
+.container{
+    font-size: 20px;
+    background-color:#a5c3e8;
+    padding: 15px;
+    font-weight: 500;
+
+
+}
+
+
+.intro{
+    margin-top: 50px;
     
-    }
-    .p-2{
+}
+.p-2{
         margin-top: 50px;
     }
