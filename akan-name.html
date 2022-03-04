@@ -12,115 +12,77 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="akan-name.css">
+    <title>Akan-name</title>
 </head>
 
 <body>
 
-
-    <div class=" akan">
-
-        <div class="jumbotron">
-            <div class="container">
-
-
-                <h2 class="display-4">Akan Names</h2>
-
-                <p class="lead">This is a web application that calculates the day of the week you were born and then
-                    depending on your
-                    gender it outputs your Akan name.</p>
+    <div class="p-2">
+        <form onsubmit="return setAction(this)">
+            <div>
+                <label>Day:</label>
+                <input id="day" name="date of birth" type="number" placeholder="DD" value required>
+            </div>
+            <div>
+                <label>Month:</label>
+                <input id="month" name="month of birth" type="number" placeholder="MM" value required>
+            </div>
+            <div>
+                <label>Year:</label>
+                <input id="year" name="year of birth" type="number" placeholder="YYYY" value required>
             </div>
 
-        </div>
+            <br><br>
 
-        <br>
+            <div class="container">
+        
 
-        <div class="container">
-
-            <form>
-
-                <label>
-                    Day:
-
-                    <input id="day" type="number" name="date of birth" placeholder="DD" value required>
-                </label>
-
-                <br><br>
-
-
-                <label>
-                    Month:
-
-                    <input id="month" type="number" name="month" placeholder="MM" value required>
-                </label>
-
-                <br><br>
-
-                <label>
-                    Year:
-
-                    <input id="year" type="number" name="year of birth" placeholder="YYYY" value required>
-                </label>
-                <br><br><br>
-
-
-                <div class="container">
-
-
-
-                    <div class="row">
-                        <div class="col-md-3">
-                            <label>
-
-                                <p id="gender">Gender:</p>
-
-
-                            </label>
-
-
-
-                        </div>
-                        <div class="col-md-3">
-                            <label>
-
-
-                                Male:
-
-                                <input id="Male" type="radio" name="gender" placeholder="male" value required>
-
-                            </label>
-                        </div>
-                        <div class="col-md-3">
-
-                            <label>
-
-
-
-                                Female:
-
-                                <input id="Female" type="radio" name="gender" placeholder="female" value required>
-
-                            </label>
-                        </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    <div>
+                        <label>Gender:</label>
+        
                     </div>
                 </div>
-            </form>
-        </div>
-         <br>
-
     
 
-        <label>
+
+                    <div class="col-md-3">
+                        <label>
 
 
-            <button type="button" class="btn btn-info" style="font-size: 30px; align-items: center;">Submit</button>
-        </label>
+                            Male:
 
+                            <input id="Male" type="radio" name="gender" placeholder="male" value required>
+
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+
+                        <label>
+
+
+
+                            Female:
+
+                            <input id="Female" type="radio" name="gender" placeholder="female" value required>
+
+                        </label>
+                    </div>
+                </div>
+            </div>
+           
+            <div>
+                <input id="submit" type="submit" value="submit" onclick="return akanName()">
+            </div>
         </form>
     </div>
-    </div>
 
+
+    <script src="akan-name.js">
+
+    </script>
 </body>
 
 </html>
