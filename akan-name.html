@@ -18,65 +18,71 @@
 
 <body>
 
-    <div class="p-2">
-        <form onsubmit="return setAction(this)">
-            <div>
-                <label>Day:</label>
-                <input id="day" name="date of birth" type="number" placeholder="DD" value required>
-            </div>
-            <div>
-                <label>Month:</label>
-                <input id="month" name="month of birth" type="number" placeholder="MM" value required>
-            </div>
-            <div>
-                <label>Year:</label>
-                <input id="year" name="year of birth" type="number" placeholder="YYYY" value required>
-            </div>
+    <div class="container-fluid">
 
-            <br><br>
+        <div class="p-2">
+            <form onsubmit="return setAction(this)">
+                <div>
+                    <label>Day:</label>
+                    <input id="day" name="date of birth" type="number" placeholder="DD" value required>
+                </div>
+                <br>
+                <div>
+                    <label>Month:</label>
+                    <input id="month" name="month of birth" type="number" placeholder="MM" value required>
+                </div>
+                <br>
+                <div>
+                    <label>Year:</label>
+                    <input id="year" name="year of birth" type="number" placeholder="YYYY" value required>
+                </div>
 
-            <div class="container">
-        
+                <br><br>
 
-                <div class="row">
-                    <div class="col-md-3">
-                    <div>
-                        <label>Gender:</label>
-        
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div>
+                                <label>Gender:</label>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <label>
+
+                                Male:
+
+                                <input id="Male" type="radio" name="gender" placeholder="male" value required>
+
+                            </label>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <label>
+
+                                Female:
+
+                                <input id="Female" type="radio" name="gender" placeholder="female" value required>
+
+                            </label>
+                        </div>
                     </div>
                 </div>
-    
+            </form>
+        </div>
+        <br>
 
-
-                    <div class="col-md-3">
-                        <label>
-
-
-                            Male:
-
-                            <input id="Male" type="radio" name="gender" placeholder="male" value required>
-
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-
-                        <label>
-
-
-
-                            Female:
-
-                            <input id="Female" type="radio" name="gender" placeholder="female" value required>
-
-                        </label>
-                    </div>
-                </div>
-            </div>
-           
-            <div>
+        <div class="submit">
+            <button class="btn btn-primary">
                 <input id="submit" type="submit" value="submit" onclick="return akanName()">
-            </div>
-        </form>
+            </button>
+        </div>
+
     </div>
 
 
