@@ -76,19 +76,19 @@ index = 6;
 index = dayOfWeekNumber - 1;
 }
 
-
+alert("You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index])  !==  ( "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index]);
  
 
 if (myGenderValue == "male" && monthValid && dayValid) {
-    document.getElementById('result')= alert(("You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index]));
+    document.getElementById('result')= ("You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index]);
   
-   
+    
 
     return false;
   } 
 
   else if (myGenderValue == "female" && monthValid && dayValid) {
-    document.write('result').textContent =( "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index]);
+    document.getElementById('result').textContent =( "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index]);
    
 
     return false;
@@ -96,6 +96,8 @@ if (myGenderValue == "male" && monthValid && dayValid) {
     alert("You entered an invalid day or month, please try again");
   }
 }
+
+
 
 
 
