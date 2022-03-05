@@ -78,6 +78,20 @@ index = dayOfWeekNumber - 1;
 
 alert(index);
 
+if (myGenderValue == "male" && monthValid && dayValid) {
+    document.getElementById('result').innerHTML = ("You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index]);
+  
+    return false;
+  } else if (myGenderValue == "female" && monthValid && dayValid) {
+    document.getElementById('result').innerHTML =( "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index]);
+
+    return false;
+  } else {
+    alert("You entered an invalid day or month, please try again");
+  }
+}
+
+
 
     
   
