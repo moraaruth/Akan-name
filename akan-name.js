@@ -76,14 +76,20 @@ index = 6;
 index = dayOfWeekNumber - 1;
 }
 
-alert(index);
+
+ 
 
 if (myGenderValue == "male" && monthValid && dayValid) {
-    document.getElementById('result').innerHTML = ("You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index]);
+    document.getElementById('result')= alert(("You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index]));
   
+   
+
     return false;
-  } else if (myGenderValue == "female" && monthValid && dayValid) {
-    document.getElementById('result').innerHTML =( "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index]);
+  } 
+
+  else if (myGenderValue == "female" && monthValid && dayValid) {
+    document.write('result').textContent =( "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index]);
+   
 
     return false;
   } else {
