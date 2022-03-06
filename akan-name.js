@@ -75,9 +75,7 @@ function getAkanName() {
 
 
         return false;
-    } else {
-        alert("You entered an invalid day or month, please try again");
-    }
+    } 
 }
 
 
