@@ -5,12 +5,15 @@ form label {
     display: inline-block;
     width: 100px;
     }
+
 .container{
     font-size: 20px;
-    background-color:#a5c3e8;
+    background-color:
+    #a3989f
+    ;
     padding: 15px;
     font-weight: 500;
-    margin-top: 50px;
+    margin-top: 30px;
 
 
 }
