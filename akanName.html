@@ -17,171 +17,189 @@
 </head>
 
 <body>
+    
+        <div class="head">
 
-    <div>
-        <table class="table">
-           <tr>
-               <th>Day of the Week</th>
-               <th>Female Name</th>
-               <th>Male Name</th>
-           </tr>
-           <tr>
-            <td>Sunday</td>
-            <td>Akosua</td>
-            <td>Kwasi</td>
-           </tr>
-           <tr>
-            <td>Monday</td>
-            <td>Adwoa</td>
-            <td>Kwadwo</td>
-           </tr>
-           <tr>
-            <td>Tuesday</td>
-            <td>Abenaa</td>
-            <td>Kwabena</td>
-           </tr>
-           <tr>
-            <td>Wednesday</td>
-            <td>Akua</td>
-            <td>Kwaku</td>
-           </tr>
-           <tr>
-            <td>Thursday</td>
-            <td>Yaa</td>
-            <td>Yaw</td>
-           </tr>
-           <tr>
-            <td>Friday</td>
-            <td>Afua</td>
-            <td>KOfi</td>
-           </tr>
-           <tr>
-            <td>Saturday</td>
-            <td>Ama</td>
-            <td>Kwame</td>
-           </tr>
-        
-        </table>
-    </div>
-
-    <div class="container">
-
-  
-
-        <div class="intro">
-
-            <div class="row">
+            <h2 id="h2">Akan Names Generator</h2><br>
 
 
-
-                <h2>Akan Names</h2><br><br>
-                <div class="col-md-4">
-
-                    <p class="lead">This is a web application that calculates the day of the week you were born and then
-                        depending on your gender it outputs your Akan name.</p>
-
-                </div>
-                <div class="col-md-4">
-
-                    <p class="lead">Akan names are derived from Ghanian culture.Names are based on gender and day you
-                        were born.
-                    </p>
-                </div>
-                <div class="col-md-4">
-
-                    <p class="lead">By filling the form, you get your Akan name.
-                        <br> <a target="_blank" href="http://www.afropedea.org/akan-names"> More Info on Akan names.</a>
-                    </p>
-                </div>
-
-            </div>
+            <p class="lead">This is a web application that calculates the day of the week you were born and then
+                depending on your gender it outputs your Akan name.</p>
 
         </div>
+    </div>
+    <br><br>
 
-        <br>
-      
+    <div class="row">
+        <div class="col-md-6">
 
-        <div class="p-2">
-
-            <form onsubmit="return getAkanName()">
-
+            <div class="table">
                 <div>
-                    <label>Day:</label>
-                    <input id="day" name="date of birth" type="number" placeholder="DD" value required>
+                    <table>
+                        <tr>
+                            <th>Day of the Week</th>
+                            <th>Female Name</th>
+                            <th>Male Name</th>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Akosua</td>
+                            <td>Kwasi</td>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Adwoa</td>
+                            <td>Kwadwo</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Abenaa</td>
+                            <td>Kwabena</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Akua</td>
+                            <td>Kwaku</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Yaa</td>
+                            <td>Yaw</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Afua</td>
+                            <td>Kofi</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Ama</td>
+                            <td>Kwame</td>
+                        </tr>
+
+                    </table>
                 </div>
-
-                <br>
-
-                <div>
-                    <label>Month:</label>
-                    <input id="month" name="month of birth" type="number" placeholder="MM" value required>
-                </div>
-
-                <br>
-
-                <div>
-                    <label>Year:</label>
-                    <input id="year" name="year of birth" type="number" placeholder="YYYY" value required>
-                </div>
-
-                <br><br>
+            </div>
+        </div>
 
 
-                <div class="row">
 
-                    <div class="col-md-3">
+        <div class="container">
+
+            <div class="intro">
+
+
+                <div class="p-2">
+
+                    <form onsubmit="return getAkanName()">
+
+                        <div>
+                            <label>Day:</label>
+                            <input id="day" name="date of birth" type="number" placeholder="DD" value required>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label>Month:</label>
+                            <input id="month" name="month of birth" type="number" placeholder="MM" value required>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label>Year:</label>
+                            <input id="year" name="year of birth" type="number" placeholder="YYYY" value required>
+                        </div>
+
+                        <br><br>
+
+
+                        <div class="row">
+
+                            <div class="col-md-3">
+
+                                <div>
+
+                                    <label>Gender:</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3">
+
+                                <label>
+
+                                    Male:
+
+                                    <input id="Male" type="radio" name="gender" placeholder="male" value required>
+
+                                </label>
+
+                            </div>
+
+                            <div class="col-md-3">
+
+                                <label>
+
+                                    Female:
+
+                                    <input id="Female" type="radio" name="gender" placeholder="female" value required>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <br>
 
                         <div>
 
-                            <label>Gender:</label>
+                            <input id="submit" type="submit">
+
+                        </div>
+
+                    </form>
+
+                    <div class="col-md-6">
+
+
+                        <div class="row">
+
+
+
+
+                            <div class="col-md-6">
+
+                                <p class="lead">Akan names are derived from Ghanian culture.Names are based on gender
+                                    and day you
+                                    were born.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+
+                                <p class="lead">By filling the form, you get your Akan name.
+                                    <br> <a target="_blank" href="http://www.afropedea.org/akan-names"> More Info on
+                                        Akan names.</a>
+                                </p>
+                            </div>
 
                         </div>
 
                     </div>
 
-                    <div class="col-md-3">
-
-                        <label>
-
-                            Male:
-
-                            <input id="Male" type="radio" name="gender" placeholder="male" value required>
-
-                        </label>
-
-                    </div>
-
-                    <div class="col-md-3">
-
-                        <label>
-
-                            Female:
-
-                            <input id="Female" type="radio" name="gender" placeholder="female" value required>
-
-                        </label>
-
-                    </div>
-
+                    <br>
                 </div>
-
-                <br>
-
-                <div>
-
-                    <input id="submit" type="submit">
-
-                </div>
-
-            </form>
-
-            <p id="result"></p>
+            </div>
 
         </div>
+    </div>
 
-        <script src="akan-name.js">
+    <script src="akan-name.js">
 
-        </script>
+    </script>
 
 </body>
 
