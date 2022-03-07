@@ -12,8 +12,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="akan-name.css">
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'
+        rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+
     <title>Akan-name</title>
+
 </head>
 
 <body>
@@ -104,86 +110,49 @@
                 <div class="intro">
 
 
-                    <form onsubmit="return getAkanName()">
+                    Date: <input type="text" id="calendar">
 
-                        <h4 id="h4"><em>Fill in to generate your Akan
-                                Name</em></h4>
-                        <hr>
+                    <br>
 
-                        <div>
-                            <label>Day:</label>
-                            <input id="day" name="date of birth" type="number" placeholder="DD" value required>
-                        </div>
+                    Day of the week: <input type="text" id="demo" readonly>
 
-                        <br>
+                    <br><br>
 
-                        <div>
-                            <label>Month:</label>
-                            <input id="month" name="month of birth" type="number" placeholder="MM" value required>
-                        </div>
+                    <div class="row">
 
-                        <br>
+                        <div class="col-md-6">
 
-                        <div>
-                            <label>Year:</label>
-                            <input id="year" name="year of birth" type="number" placeholder="YYYY" value required>
-                        </div>
+                            <label for="Gender">Gender:</label>
 
-                        <br><br>
-
-
-                        <div class="row">
-
-                            <div class="col-md-3">
-
-                                <div>
-
-                                    <label>Gender:</label>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-3">
-
-                                <label>
-
-                                    Male:
-
-
-
-                                    <input id="Male" type="radio" name="gender" placeholder="male" value required>
-
-                                </label>
-
-                            </div>
-
-                            <div class="col-md-3">
-
-                                <label>
-
-                                    Female:
-
-                                    <input id="Female" type="radio" name="gender" placeholder="female" value required>
-
-                                </label>
-
-                            </div>
+                            <select name="gender" id="gender">
 
                         </div>
 
-                        <br>
+                        <div class="col-md-6">
 
-                        <div>
+                            <option value="male">male</option>
 
-                            <input id="submit" type="submit">
+                            <option value="female">female</option>
 
-                            <input type="reset" value="Reset">
-
+                            </select>
 
                         </div>
 
-                    </form>
+                    </div>
+
+                    <br>
+
+                    <button type="button" onclick="getInputValue();">Get Value</button>
+
+                    <br><br>
+
+                    <input type="reset" value="Reset">
+
+                    <br><br>
+
+                    <p>Your Akan name is</p>
+
+                    <p id="thename"></p>
 
                 </div>
 
@@ -191,7 +160,7 @@
         </div>
     </div>
 
-    <script src="akan-name.js">
+    <script src="index.js">
 
     </script>
 

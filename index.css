@@ -45,21 +45,16 @@ form label {
     float: right;
     
 }
-#h4{
-    color: grey;
-    justify-items: center;
-    font-size: 26px;
-    background-color:#2e3620;
-    padding: 10px;
-}
-#day{
+#calendar{
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 50%;
 }
-#month{
-    width: 50%;
-}
-#year{
-    width: 50%;
+
+#demo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
 }
 .table{
     margin-left: 5px;
