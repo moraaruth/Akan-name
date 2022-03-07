@@ -58,3 +58,8 @@ function getInputValue(){
     //alert(inputVal);
     
 }
+resetValue = () =>{
+    this.setState({
+      eventsData: eventsData
+    });
+  }
