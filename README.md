@@ -8,6 +8,7 @@ Ruth Moraa
 
 + [Description](#description)
 + [Technology Used](#technology-used)
++ [BDD](#BDD)
 + [Github-Pages link](#gh-pages )
 + [Reference](#reference)
 + [Licence](#licence)
@@ -39,6 +40,14 @@ Ruth Moraa
 * Javascript - which is used to make my project interactive and fun.
 
 * Bootstrap - which makes my project responsive.
+
+## BDD
+* Write code to handle
+* Wrong input entered
+* No data entered
+* Correct data entered
+* Placeholders
+* Correct Akan name to match day of the week.
 
 ## Github Pages link
 
