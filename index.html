@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="akan-name.css">
+    <title>Akan-name</title>
+</head>
+
+<body>
+
+    <div class="head">
+
+        <h2 id="h2">Akan Names Generator</h2>
+
+
+        <p class="lead">This is a web application that calculates the day of the week you were born and then
+            depending on your gender it outputs your Akan name.<br>After submitting your date of birth and gender, you
+            will get an alert of your day name in Ashanti Twi,a dialect of Akan and most widely spoken language in
+            Ghana.<br>The table on the left
+            side shows akan names of male and female according to the day of the week they were born.<br><a
+                target="_blank" href="http://www.afropedea.org/akan-names"> More Info on
+                Akan names.</a></p>
+
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <div class="table">
+
+                    <table>
+
+                        <tr>
+                            <th>Day of the Week</th>
+                            <th>Female Name</th>
+                            <th>Male Name</th>
+                        </tr>
+
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Akosua</td>
+                            <td>Kwasi</td>
+                        </tr>
+
+                        <tr>
+                            <td>Monday</td>
+                            <td>Adwoa</td>
+                            <td>Kwadwo</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Abenaa</td>
+                            <td>Kwabena</td>
+                        </tr>
+
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Akua</td>
+                            <td>Kwaku</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Yaa</td>
+                            <td>Yaw</td>
+                        </tr>
+
+                        <tr>
+                            <td>Friday</td>
+                            <td>Afua</td>
+                            <td>Kofi</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Ama</td>
+                            <td>Kwame</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="intro">
+
+
+                    <form onsubmit="return getAkanName()">
+
+                        <h4 id="h4"><em>Fill in to generate your Akan
+                                Name</em></h4>
+                        <hr>
+
+                        <div>
+                            <label>Day:</label>
+                            <input id="day" name="date of birth" type="number" placeholder="DD" value required>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label>Month:</label>
+                            <input id="month" name="month of birth" type="number" placeholder="MM" value required>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label>Year:</label>
+                            <input id="year" name="year of birth" type="number" placeholder="YYYY" value required>
+                        </div>
+
+                        <br><br>
+
+
+                        <div class="row">
+
+                            <div class="col-md-3">
+
+                                <div>
+
+                                    <label>Gender:</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3">
+
+                                <label>
+
+                                    Male:
+
+
+
+                                    <input id="Male" type="radio" name="gender" placeholder="male" value required>
+
+                                </label>
+
+                            </div>
+
+                            <div class="col-md-3">
+
+                                <label>
+
+                                    Female:
+
+                                    <input id="Female" type="radio" name="gender" placeholder="female" value required>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <br>
+
+                        <div>
+
+                            <input id="submit" type="submit">
+
+                            <input type="reset" value="Reset">
+
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="akan-name.js">
+
+    </script>
+
+</body>
+
+</html>

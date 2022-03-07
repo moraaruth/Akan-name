@@ -76,6 +76,10 @@ function getAkanName() {
 
         return false;
     } 
+
+    else ("try again!")
+
+    
 }
 
 
