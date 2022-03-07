@@ -52,7 +52,7 @@ Ruth Moraa
 ## Github Pages link
 
 You can view the live application by following this link
-https://moraaruth.github.io/akan-name/
+https://moraaruth.github.io/Akan-name/
 
 ## Reference
 * Materialize CSS
